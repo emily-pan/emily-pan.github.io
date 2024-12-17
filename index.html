@@ -1,10 +1,172 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Pan - Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
 
+        /* Header */
+        header {
+            background-color: #E63946;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 3rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #E63946;
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #E63946;
+            padding-bottom: 0.5rem;
+        }
+
+        a {
+            color: #E63946;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .project {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border: 4px solid #f1f1f1;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .fullscreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .fullscreen img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .fullscreen.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #222;
+            color: #ccc;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #E63946;
+            font-weight: 400;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
 <body>
-  <center>
-    <h2> EMILY PAN </h2>
-    <h1> Hello World! </h1>
-  </center>
-</body>
+    <!-- Header -->
+    <header>
+        <h1>Emily Pan</h1>
+    </header>
 
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Projects Section -->
+        <section>
+            <h2>Projects</h2>
+            <div class="project">
+                <!-- Project Image -->
+                <img src="RHR.png" alt="Resting Heart Rate Project Poster" id="projectImage">
+                <p><strong>Resting Heart Rate: A Key Indicator of Overall Health</strong></p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Fullscreen Viewer -->
+    <div class="fullscreen" id="fullscreen">
+        <img src="RHR.png" alt="Resting Heart Rate Project Poster">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Emily Pan | Connect via <a href="mailto:emily.pan@mail.utoronto.ca">Email</a></p>
+    </footer>
+
+    <script>
+        // JavaScript to handle full-screen toggle
+        const projectImage = document.getElementById('projectImage');
+        const fullscreen = document.getElementById('fullscreen');
+
+        // Show full screen on image click
+        projectImage.addEventListener('click', () => {
+            fullscreen.classList.add('show');
+        });
+
+        // Exit full screen on full-screen image click
+        fullscreen.addEventListener('click', () => {
+            fullscreen.classList.remove('show');
+        });
+    </script>
+</body>
 </html>
