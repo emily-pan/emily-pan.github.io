@@ -3,179 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emily Pan - Portfolio</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Emily Pan | Statistics & Data</title>
     <style>
-        /* Global Styles */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --accent-color: #0066cc; /* Professional Blue */
+            --secondary-text: #666666;
+        }
+
         body {
-            font-family: 'Open Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
+            color: var(--text-color);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
 
         /* Header */
-        header {
-            background-color: #E63946;
-            color: #fff;
-            text-align: center;
-            padding: 2rem 1rem;
-        }
+        header { margin-bottom: 60px; }
+        h1 { margin: 0; font-size: 2.5rem; letter-spacing: -1px; }
+        .subtitle { color: var(--secondary-text); font-size: 1.2rem; margin-top: 10px; }
+        
+        /* Links */
+        a { color: var(--text-color); text-decoration: none; border-bottom: 1px solid #ddd; transition: 0.2s; }
+        a:hover { border-bottom-color: var(--accent-color); color: var(--accent-color); }
+        
+        /* Sections */
+        section { margin-bottom: 50px; }
+        h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; color: var(--secondary-text); border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 20px; }
 
-        header h1 {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            font-size: 3rem;
+        /* Project List */
+        .project-item { margin-bottom: 30px; }
+        .project-title { font-weight: 600; font-size: 1.2rem; display: block; margin-bottom: 5px; border: none; }
+        .project-desc { color: var(--secondary-text); margin: 0; }
+        .tech-stack { font-size: 0.85rem; color: var(--secondary-text); margin-top: 5px; font-family: monospace; }
+        
+        /* Poster Link Style */
+        .poster-link {
+            border: none;
+            color: var(--accent-color);
+            margin-left: 10px;
             font-weight: 600;
-            letter-spacing: 1px;
-        }
-
-        /* Main Content */
-        .container {
-            max-width: 900px;
-            margin: 3rem auto;
-            padding: 2rem;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #E63946;
-            font-family: 'Poppins', sans-serif;
-            text-transform: uppercase;
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-bottom: 2px solid #E63946;
-            padding-bottom: 0.5rem;
-        }
-
-        a {
-            color: #E63946;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .project {
-            text-align: center;
-            margin-top: 2rem;
-        }
-
-        .project img {
-            max-width: 100%;
-            height: auto;
-            border: 4px solid #f1f1f1;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-
-        .fullscreen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-
-        .fullscreen img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-
-        .fullscreen.show {
-            opacity: 1;
-            visibility: visible;
         }
 
         /* Footer */
-        footer {
-            text-align: center;
-            background-color: #222;
-            color: #ccc;
-            padding: 1rem;
-            font-size: 0.9rem;
-        }
-
-        footer a {
-            color: #E63946;
-            font-weight: 400;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
+        footer { margin-top: 80px; padding-top: 20px; border-top: 1px solid #eee; color: var(--secondary-text); font-size: 0.9rem; }
     </style>
 </head>
 <body>
-    <!-- Header -->
+
     <header>
         <h1>Emily Pan</h1>
+        <div class="subtitle">Statistics Student & Data Analyst</div>
+        <div style="margin-top: 20px;">
+            <a href="mailto:emily.pan@mail.utoronto.ca">Email</a> &nbsp;
+            <a href="https://github.com/emily-pan">GitHub</a> &nbsp;
+            <a href="#">LinkedIn</a> </div>
     </header>
 
-    <!-- Main Content -->
-    <div class="container">
-        <!-- Projects Section -->
-        <section>
-            <h2>Cocoa Futures Project</h2>
-                <!-- Cocoa Futures Project -->
-                <div class="project">
-                    <img src="cocoa.png" alt="Cocoa Futures Market Analysis – Ghana" id="projectImage">
-                    <p><strong>Cocoa Futures Market Analysis – Ghana</strong></p>
-                    <p><a href="cocoa_futures_report.pdf" target="_blank">📄 View PDF Report</a></p>
-                </div>
-        </section>
-        <section>
-        <h2>RHR Project</h2>
-            <!-- RHR Project -->
-            <div class="project">
-                <img src="RHR.png" alt="Resting Heart Rate Project Poster" id="projectImage">
-                <p><strong>Resting Heart Rate: A Key Indicator of Overall Health</strong></p>
+    <section>
+        <h2>About</h2>
+        <p>
+            I am a Statistics student at the University of Toronto, focused on transforming complex datasets into actionable insights. 
+            I have experience with predictive modeling, financial analysis, and statistical computing. 
+            Currently preparing for the ISC2 Certified in Cybersecurity exam.
+        </p>
+    </section>
+
+    <section>
+        <h2>Selected Projects</h2>
+
+        <div class="project-item">
+            <a href="projects/cocoa-futures-report.pdf" class="project-title">📉 Analysis of Cocoa Futures Market</a>
+            <p class="project-desc">
+                Investigated price volatility and market trends in the cocoa futures market. Applied statistical time-series methods to forecast potential price movements.
+                </p>
+            <div class="tech-stack">Time Series Analysis • R • Statistical Modeling</div>
+        </div>
+
+        <div class="project-item">
+            <a href="projects/resting-heart-rate-report.pdf" class="project-title">❤️ Resting Heart Rate as a Health Indicator</a>
+            <p class="project-desc">
+                Analyzed 3,340 participants from the NHANES dataset to model the relationship between lifestyle factors (BMI, Sleep) and cardiovascular health. Validated assumptions using log-transformations and ANOVA.
+            </p>
+            <div class="tech-stack">
+                R (NHANES data) • Linear Regression • Model Selection 
+                <a href="projects/resting-heart-rate-poster.jpg" class="poster-link">[View Poster]</a>
             </div>
-        </section>
-    </div>
+        </div>
 
-    <!-- Fullscreen Viewer -->
-    <div class="fullscreen" id="fullscreen">
-        <img src="RHR.png" alt="Resting Heart Rate Project Poster">
-    </div>
+    </section>
 
-    <!-- Footer -->
     <footer>
-        <p>© 2025 Emily Pan | Connect via <a href="mailto:emily.pan@mail.utoronto.ca">Email</a></p>
+        &copy; 2026 Emily Pan. Built with GitHub Pages.
     </footer>
 
-    <script>
-        // JavaScript to handle full-screen toggle
-        const projectImage = document.getElementById('projectImage');
-        const fullscreen = document.getElementById('fullscreen');
-
-        // Show full screen on image click
-        projectImage.addEventListener('click', () => {
-            fullscreen.classList.add('show');
-        });
-
-        // Exit full screen on full-screen image click
-        fullscreen.addEventListener('click', () => {
-            fullscreen.classList.remove('show');
-        });
-    </script>
 </body>
 </html>
