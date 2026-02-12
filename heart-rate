@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resting Heart Rate Analysis | Emily Pan</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header { margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+        a { text-decoration: none; color: #0066cc; font-weight: bold; }
+        .pdf-container { width: 100%; height: 100vh; min-height: 800px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html">← Back to Portfolio</a>
+        <span style="margin-left: 15px; color: #666;">Resting Heart Rate as a Health Indicator</span>
+    </header>
+
+    <object data="projects/resting-heart-rate-report.pdf" type="application/pdf" class="pdf-container">
+        <p>It looks like your browser doesn't support embedded PDFs. 
+        <a href="projects/resting-heart-rate-report.pdf">Click here to download the report instead.</a></p>
+    </object>
+
+</body>
+</html>
