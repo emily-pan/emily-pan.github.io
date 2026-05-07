@@ -23,10 +23,14 @@
     }
     
     /* Header */
-    header { margin-bottom: 60px; }
+    header {
+        margin-bottom: 60px;
+        border-bottom: 3px solid var(--accent-color);
+        padding-bottom: 30px;
+    }
     
     h1 {
-        margin: 0;
+        margin: 0 0 8px 0;
         font-size: 2.5rem;
         letter-spacing: -1px;
         color: var(--navy);
@@ -35,10 +39,37 @@
     
     .subtitle {
         color: var(--secondary-text);
-        font-size: 1rem;
-        margin-top: 8px;
+        font-size: 0.95rem;
+        margin: 0 0 16px 0;
         font-style: italic;
+        letter-spacing: 0.5px;
     }
+    
+    .contact-links {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    
+    .contact-link {
+        display: inline-block;
+        padding: 5px 14px;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        font-size: 0.82rem;
+        color: var(--secondary-text);
+        text-decoration: none;
+        border-bottom: 1px solid #ddd;
+        transition: 0.2s;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .contact-link:hover {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+    }
+
     
     /* Links */
     a {
@@ -130,25 +161,6 @@
     gap: 12px;
     flex-wrap: wrap;
 }
-    /* Contact */
-    .contact-link {
-        display: inline-block;
-        padding: 6px 14px;
-        border: 1px solid #ddd;
-        border-radius: 20px;
-        font-size: 0.85rem;
-        color: var(--secondary-text);
-        text-decoration: none;
-        border-bottom: none;
-        transition: 0.2s;
-    }
-    
-    .contact-link:hover {
-        border-color: var(--accent-color);
-        color: var(--accent-color);
-        border-bottom: none;
-    }
-
     
     /* Footer */
     footer {
@@ -164,27 +176,29 @@
 <body>
 
     <header>
-        <h1>EMILY PAN</h1>
+        <h1>Emily Pan</h1>
         <div class="subtitle">
-            Mathematics & Statistics, University of Toronto
+            Mathematics & Statistics Graduate | 
+            University of Toronto
         </div>
         <div class="contact-links">
-        <a href="mailto:emily.pan@mail.utoronto.ca" 
-            class="contact-link">
-            Email
-        </a>
-        <a href="https://github.com/emily-pan" 
-            target="_blank" 
-            class="contact-link">
-            GitHub
-        </a>
-        <a href="#" 
-            target="_blank" 
-            class="contact-link">
-            LinkedIn
-        </a>
-    </div>
+            <a href="mailto:emily.pan@mail.utoronto.ca" 
+                class="contact-link">
+                Email
+            </a>
+            <a href="https://github.com/emily-pan" 
+                target="_blank" 
+                class="contact-link">
+                GitHub
+            </a>
+            <a href="#" 
+                target="_blank" 
+                class="contact-link">
+                LinkedIn
+            </a>
+        </div>
     </header>
+
 
     <section>
         <h2>About</h2>
