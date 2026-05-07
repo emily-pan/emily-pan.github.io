@@ -44,31 +44,16 @@
         letter-spacing: 0.5px;
     }
     
-    .contact-links {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        margin-top: 0;
-    }
-    
-    .contact-link {
-        display: inline-block;
-        padding: 5px 14px;
-        border: 1px solid #ddd;
-        border-radius: 20px;
-        font-size: 0.82rem;
+    .contact-line {
+        margin-top: 10px;
+        font-size: 0.88rem;
         color: var(--secondary-text);
-        text-decoration: none;
-        border-bottom: 1px solid #ddd;
-        transition: 0.2s;
-        font-family: Arial, Helvetica, sans-serif;
     }
     
-    .contact-link:hover {
-        border-color: var(--accent-color);
-        color: var(--accent-color);
+    .divider {
+        margin: 0 8px;
+        color: #ccc;
     }
-
     
     /* Links */
     a {
@@ -180,24 +165,23 @@
             Mathematics & Statistics Graduate | 
             University of Toronto
         </div>
-        <div class="contact-links">
-            <a href="mailto:emily.pan@mail.utoronto.ca" 
-                class="contact-link">
-                Email
-            </a>
-            <a href="https://github.com/emily-pan" 
-                target="_blank" 
-                class="contact-link">
-                GitHub
-            </a>
-            <a href="#" 
-                target="_blank" 
-                class="contact-link">
-                LinkedIn
-            </a>
-        </div>
+    <div class="contact-line">
+        toronto, ON
+        <span class="divider">|</span>
+        <a href="mailto:emily.pan@mail.utoronto.ca">
+            emily.pan@mail.utoronto.ca
+        </a>
+        <span class="divider">|</span>
+        <a href="https://github.com/emily-pan" 
+            target="_blank">
+            github.com/emily-pan
+        </a>
+        <span class="divider">|</span>
+        <a href="#" target="_blank">
+            linkedin.com/in/emily-pan
+        </a>
+    </div>
     </header>
-
 
     <section>
         <h2>About</h2>
