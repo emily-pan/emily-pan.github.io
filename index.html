@@ -48,7 +48,7 @@
             font-weight: 600;
         }
 
-        /* Project header with title and link on same line */
+        /* Project Link Style */
         .project-header {
             display: flex;
             justify-content: space-between;
@@ -62,6 +62,19 @@
             margin-left: 12px;
         }
 
+            .project-title {
+        font-weight: 600;
+        font-size: 1.2rem;
+        display: inline;
+        border-bottom: 2px solid var(--accent-color);
+        color: var(--accent-color);
+        margin-bottom: 5px;
+    }
+    
+    .project-title:hover {
+        opacity: 0.75;
+    }
+        
         /* Footer */
         footer { margin-top: 80px; padding-top: 20px; border-top: 1px solid #eee; color: var(--secondary-text); font-size: 0.9rem; }
     </style>
@@ -98,7 +111,7 @@
             <div class="project-header">
                 <a href="https://github.com/emily-pan/emily-pan.github.io/blob/d9458e12c4227c0554c0725d473ab9ea3ee5fa54/projects/bnpl-credit-risk-analysis/bnpl-credit-risk-analysis.ipynb"
                     target="_blank" class="project-title">
-                    BNPL Credit Risk & Default Analysis
+                    BNPL Credit Risk & Default Analysis ↗
                 </a>
                 <span class="project-link">
                     <a href="https://github.com/emily-pan/emily-pan.github.io/blob/d9458e12c4227c0554c0725d473ab9ea3ee5fa54/projects/bnpl-credit-risk-analysis/bnpl-credit-risk-analysis.ipynb"
@@ -126,7 +139,7 @@
             <div class="project-header">
                 <a href="cocoa.html" target="_blank" 
                     class="project-title">
-                    Analysis of Cocoa Futures Market
+                    Analysis of Cocoa Futures Market ↗
                 </a>
             </div>
             <p class="project-desc">
@@ -147,7 +160,7 @@
             <div class="project-header">
                 <a href="heart-rate.html" target="_blank" 
                     class="project-title">
-                    Resting Heart Rate as a Health Indicator
+                    Resting Heart Rate as a Health Indicator ↗
                 </a>
                 <span class="project-link">
                     <a href="projects/resting-heart-rate-poster.png" 
