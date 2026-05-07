@@ -6,52 +6,136 @@
     <title>Emily Pan</title>
     <style>
         :root {
-            --bg-color: #ffffff;
-            --text-color: #333333;
-            --accent-color: #0066cc; /* Professional Blue */
-            --secondary-text: #666666;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        /* Header */
-        header { margin-bottom: 60px; }
-        h1 { margin: 0; font-size: 2.5rem; letter-spacing: -1px; }
-        .subtitle { color: var(--secondary-text); font-size: 1.2rem; margin-top: 10px; }
-        
-        /* Links */
-        a { color: var(--text-color); text-decoration: none; border-bottom: 1px solid #ddd; transition: 0.2s; }
-        a:hover { border-bottom-color: var(--accent-color); color: var(--accent-color); }
-        
-        /* Sections */
-        section { margin-bottom: 50px; }
-        h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; color: var(--secondary-text); border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 20px; }
-
-        /* Project List */
-        .project-item { margin-bottom: 30px; }
-        .project-title { font-weight: 600; font-size: 1.2rem; display: block; margin-bottom: 5px; border: none; }
-        .project-desc { color: var(--secondary-text); margin: 0; }
-        .tech-stack { font-size: 0.85rem; color: var(--secondary-text); margin-top: 5px; font-family: monospace; }
-        
-        /* Poster Link Style */
-        .poster-link {
-            border: none;
-            color: var(--accent-color);
-            margin-left: 10px;
-            font-weight: 600;
-        }
-        
-        /* Footer */
-        footer { margin-top: 80px; padding-top: 20px; border-top: 1px solid #eee; color: var(--secondary-text); font-size: 0.9rem; }
+        --bg-color: #ffffff;
+        --text-color: #333333;
+        --accent-color: #2E5FA3;
+        --navy: #1F3864;
+        --secondary-text: #666666;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+    
+    /* Header */
+    header { margin-bottom: 60px; }
+    
+    h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        letter-spacing: -1px;
+        color: var(--navy);
+        font-weight: bold;
+    }
+    
+    .subtitle {
+        color: var(--secondary-text);
+        font-size: 1rem;
+        margin-top: 8px;
+        font-style: italic;
+    }
+    
+    /* Links */
+    a {
+        color: var(--text-color);
+        text-decoration: none;
+        border-bottom: 1px solid #ddd;
+        transition: 0.2s;
+    }
+    
+    a:hover {
+        border-bottom-color: var(--accent-color);
+        color: var(--accent-color);
+    }
+    
+    /* Sections */
+    section { margin-bottom: 50px; }
+    
+    h2 {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--navy);
+        font-weight: bold;
+        border-bottom: 3px solid var(--accent-color);
+        padding-bottom: 6px;
+        margin-bottom: 20px;
+    }
+    
+    /* About */
+    p {
+        color: var(--secondary-text);
+        font-size: 0.95rem;
+    }
+    
+    /* Project items */
+    .project-item {
+        margin-bottom: 30px;
+    }
+    
+    .project-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 6px;
+    }
+    
+    .project-title {
+        font-weight: 600;
+        font-size: 1.05rem;
+        color: var(--text-color);
+        display: inline;
+        border: none;
+    }
+    
+    .project-desc {
+        color: var(--secondary-text);
+        margin: 0 0 6px 0;
+        font-size: 0.9rem;
+    }
+    
+    .tech-stack {
+        font-size: 0.82rem;
+        color: var(--secondary-text);
+        margin-top: 4px;
+        font-family: monospace;
+    }
+    
+    .project-link {
+        font-size: 0.85rem;
+        white-space: nowrap;
+        margin-left: 12px;
+    }
+    
+    /* View links */
+    .poster-link {
+        border: none;
+        color: var(--accent-color);
+        font-weight: 600;
+        font-size: 0.85rem;
+    }
+    
+    .poster-link:hover {
+        opacity: 0.75;
+        border: none;
+    }
+    
+    /* Footer */
+    footer {
+        margin-top: 80px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+        color: var(--secondary-text);
+        font-size: 0.9rem;
+    }
     </style>
 </head>
+    
 <body>
 
     <header>
