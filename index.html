@@ -188,13 +188,20 @@
                 BNPL Credit Risk & Default Analysis
             </span>
             <p class="project-desc">
-                Investigated whether Buy Now Pay Later services 
-                fulfil their promise of financial empowerment or 
-                disproportionately burden vulnerable users. 
-                Analysed 10,345 synthetic transactions across 
-                6 countries to identify default risk predictors 
-                and construct a composite high risk customer 
-                profile, grounded in Canadian regulatory context.
+                Investigated whether Buy Now Pay Later 
+                services fulfil their promise of financial 
+                empowerment or disproportionately burden 
+                vulnerable users. Analysed 10,345 synthetic 
+                transactions across 6 countries using SQL 
+                and Python to identify default risk 
+                predictors. Found that users with 3 or more 
+                missed payments defaulted at over 80% 
+                compared to 27.73% for users with no missed 
+                payments. Students and unemployed users 
+                defaulted at nearly 49%, compared to 26% 
+                for self-employed users. Analysis grounded 
+                in Canadian regulatory context 
+                (FCAC, Payments Canada).
             </p>
             <div class="tech-stack">
                 Python • SQL • SQLite • Power BI • 
@@ -211,17 +218,22 @@
                 Analysis of Cocoa Futures Market
             </span>
             <p class="project-desc">
-                Investigated price volatility and market trends 
-                in the cocoa futures market. Applied statistical 
-                time-series methods including XGBoost and 
-                traditional models to forecast potential price 
-                movements and identify external drivers of 
-                market instability.
+                Evaluated five forecasting models — ARIMA, 
+                ARIMAX, GARCH, VARMA, and XGBoost — on 
+                Ghanaian cocoa price data spanning January 
+                2000 to December 2024. XGBoost outperformed 
+                all traditional time series models, achieving 
+                an MAE of 38.11 and RMSE of 235.46 compared 
+                to ARIMA models with MAE exceeding 5,000. 
+                Incorporated climate variables including 
+                precipitation and temperature alongside 
+                macroeconomic indicators to identify 
+                external drivers of price instability.
             </p>
             <div class="tech-stack">
-                R • XGBoost • Time Series Analysis • 
-                Statistical Modelling •
-                <a href="cocoa.html" target="_blank" 
+                R • XGBoost • ARIMA • VARMA • GARCH • 
+                Time Series Analysis •
+                <a href="cocoa.html" target="_blank"
                     class="poster-link">
                     [View Report]
                 </a>
@@ -233,17 +245,23 @@
                 Resting Heart Rate as a Health Indicator
             </span>
             <p class="project-desc">
-                Analysed 3,340 participants from the NHANES 
-                dataset to model the relationship between 
-                lifestyle factors and cardiovascular health. 
-                Applied residual diagnostics, log-transformations 
-                and model selection criteria to ensure 
+                Built and validated a multiple linear 
+                regression model on 3,340 NHANES participants 
+                (2009-2012) to quantify the relationship 
+                between lifestyle factors and resting heart 
+                rate. Found BMI (p = 1.23e-05), sleep hours 
+                (p = 0.0003) and perceived health status 
+                to be significant predictors. Participants 
+                rating health as poor had 5.1% higher 
+                log-pulse than those rating it as good. 
+                Applied residual diagnostics and 
+                log-transformations to ensure 
                 statistical validity.
             </p>
             <div class="tech-stack">
                 R • Multiple Linear Regression • 
                 Model Selection • NHANES •
-                <a href="projects/resting-heart-rate-poster.png" 
+                <a href="projects/resting-heart-rate-poster.png"
                     target="_blank" class="poster-link">
                     [View Poster]
                 </a>
@@ -251,7 +269,7 @@
         </div>
     
     </section>
-
+    
     <footer>
         &copy; 2026 Emily Pan. Built with GitHub Pages.
     </footer>
